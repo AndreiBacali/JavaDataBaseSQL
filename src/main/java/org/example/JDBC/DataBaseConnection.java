@@ -1,4 +1,4 @@
-package org.example;
+package org.example.JDBC;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 
@@ -7,9 +7,9 @@ import java.sql.SQLException;
 
 public class DataBaseConnection {
 
-    public final String DATABASE_URL = "jdbc:mysql://localhost:3306";
-    public final String DATABASE_USER = "root";
-    public final String DATABASE_PASSWORD = "AndreiTCM198";
+    public static final String DATABASE_URL = "jdbc:mysql://localhost:3306";
+    public static final String DATABASE_USER = "root";
+    public static final String DATABASE_PASSWORD = "AndreiTCM198";
     private static Connection connection;
 
     public static Connection getConnection() throws SQLException {
